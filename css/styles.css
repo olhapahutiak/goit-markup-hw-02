@@ -1,0 +1,60 @@
+/* колір основного тексту #212121;*/
+/* білий #FFFFFF;*/
+/* акцент #2196F3 */
+/* вторичний колір тексту #757575;*/
+/* колір фону #E5E5E5 */
+/* вторинний колір фону #2F303A;
+*/
+/* Шапка */
+:root {
+  --primary-text-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --white-background: #e5e5e5;
+  --gray-background: #2f303a;
+}
+
+body {
+  background-color: #fff;
+  color: var(--primary-text-color);
+}
+
+.logo-header {
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Навігація */
+.nav-list .nav-adress {
+  color: var(--primary-text-color);
+}
+
+.nav-list .nav-adress:hover,
+.nav-list .nav-adress:focus {
+  color: var(--accent-color);
+}
+.nav-list .mail-list {
+  color: var(--gray-background);
+}
+.nav-list .tel-list {
+  color: var(--gray-background);
+}
+
+/* Портфоліо */
+input:focus {
+  color: var(--accent-color);
+}
+.filter-item .filter-button:focus,
+.filter-item .filter-button:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
