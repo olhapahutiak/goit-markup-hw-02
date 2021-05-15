@@ -47,8 +47,13 @@ a {
 .nav-list .nav-adress.current {
   color: var(--accent-color);
 }
+
 .nav-list .mail-list {
   color: var(--gray-background);
+}
+
+.nav-list .mail-list.current {
+  color: var(--accent-color);
 }
 
 .nav-list .tel-list {
