@@ -72,7 +72,12 @@ input:focus {
 .filter-item .filter-button:focus,
 .filter-item .filter-button:hover {
   color: #ffffff;
+  border-color: transparent;
   background-color: var(--accent-color);
+}
+
+.filter-item .filter-button:active {
+  color: var(--accent-color);
 }
 
 /* Projects */
@@ -93,7 +98,12 @@ input:focus {
 /* index */
 
 /* button */
-.title .title-button {
-  color: #ffffff;
-  background-color: #2196f3;
+.button .title-button {
+  border-color: transparent;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+}
+
+.button .title-button:active {
+  color: var(--white-color);
 }
