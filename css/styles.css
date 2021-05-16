@@ -82,7 +82,7 @@ a {
 
 .nav-list .tel-list,
 .nav-list .mail-list {
-  color: #ffffff 60%;
+  color: var(--secondary-color);
   font-size: 14px;
   line-height: 1, 4;
   font-weight: 500;
@@ -97,9 +97,6 @@ a {
 }
 
 /* Портфоліо */
-input:focus {
-  color: var(--accent-color);
-}
 
 .filter-option .filtr-button {
   cursor: pointer;
@@ -167,16 +164,73 @@ input:focus {
 }
 
 /* index */
-s
 
 /* button */
-.button .title-button {
-  color: var(--white-color);
-  border-color: transparent;
-  border-radius: 4px;
-  background-color: var(--accent-color);
+.button-bgc {
+  background-color: var(--gray-background);
 }
 
-.button .title-button:active {
+.title-main {
+  color: var(--white-color);
+  font-style: 900;
+  font-size: 44px;
+  line-height: 1, 36;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-bgc .title-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.button-bgc .title-button:active {
   color: var(--primary-text-color);
+}
+
+/* Features */
+.features-list .heading {
+  color: var(--primary-text-color);
+  font-style: 700;
+  font-size: 14px;
+  line-height: 1, 17;
+  text-transform: uppercase;
+}
+
+.features-list .content {
+  color: var(--secondary-color);
+  font-style: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+}
+
+.work {
+  color: var(--primary-text-color);
+  font-style: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+}
+
+.title-team {
+  font-style: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+}
+
+.team-description .user {
+  font-style: 500;
+  font-size: 16px;
+  line-height: 1, 17;
+}
+
+.about .position {
+  color: var(--secondary-color);
+  font-style: 400;
+  font-size: 16px;
+  line-height: 1, 17;
 }
