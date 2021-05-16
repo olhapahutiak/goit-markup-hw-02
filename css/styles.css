@@ -1,7 +1,7 @@
-/* колір основного тексту #212121;*/
+/* колір основного тексту #757575;*/
 /* білий #FFFFFF;*/
 /* акцент #2196F3 */
-/* вторичний колір тексту #757575;*/
+/* вторичний колір тексту #212121;*/
 /* колір фону #E5E5E5 */
 /* вторинний колір фону #2F303A;
 */
@@ -9,16 +9,32 @@
 /* Шапка */
 
 :root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --primary-text-color: #212121;
   --white-color: #ffffff;
   --accent-color: #2196f3;
   --gray-background: #2f303a;
-  --secondary-color: #ffffff99;
+  --secondary-color: #757575;
 }
 
 body {
-  background-color: #fff;
+  font-family: var(--main-font);
   color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 .logo-header {
@@ -27,6 +43,10 @@ body {
 
 .logo {
   color: var(--accent-color);
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1, 19px;
 }
 
 ul {
@@ -36,28 +56,23 @@ a {
   text-decoration: none;
 }
 /* Навігація */
-.nav-list .nav-adress {
-  color: var(--primary-text-color);
-}
 
 .nav-list .nav-adress:hover,
 .nav-list .nav-adress:focus {
   color: var(--accent-color);
+  font-weight: normal;
 }
+
 .nav-list .nav-adress.current {
   color: var(--accent-color);
 }
 
 .nav-list .mail-list {
-  color: var(--gray-background);
+  color: var(--secondary-color);
 }
 
 .nav-list .mail-list.current {
   color: var(--accent-color);
-}
-
-.nav-list .tel-list {
-  color: var(--gray-background);
 }
 
 .nav-list .mail-list:hover,
@@ -65,10 +80,31 @@ a {
   color: var(--accent-color);
 }
 
+.nav-list .tel-list,
+.nav-list .mail-list {
+  color: #ffffff 60%;
+  font-size: 14px;
+  line-height: 1, 4;
+  font-weight: 500;
+}
+
+.nav-list .nav-adress {
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 17;
+}
+
 /* Портфоліо */
 input:focus {
   color: var(--accent-color);
 }
+
+.filter-option .filtr-button {
+  cursor: pointer;
+}
+
 .filter-item .filter-button:focus,
 .filter-item .filter-button:hover {
   color: #ffffff;
@@ -76,34 +112,71 @@ input:focus {
   background-color: var(--accent-color);
 }
 
+.filter-option .filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 6;
+}
+
 .filter-item .filter-button:active {
   color: var(--accent-color);
 }
 
-/* Projects */
+/* PROJECTS */
+.project-list .project-title {
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  font-style: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.title-card .project-description {
+  color: var(--secondary-color);
+  font-family: var(--main-font);
+  font-style: 400;
+  font-size: 16px;
+  line-height: 1, 87;
+}
 
 /* Подвал */
-.address-font-style {
+.logo-white {
+  color: var(--white-color);
+}
+
+.footer-bg {
+  background-color: var(--gray-background);
+}
+
+.adress-list {
   font-style: normal;
 }
+
+.logo-header {
+  color: var(--primary-text-color);
+}
+
 .adress-owner {
-  color: var(--gray-background);
+  color: var(--white-color);
 }
 
 .mail-link,
 .tel-link {
-  color: var(--gray-background);
+  color: var(--secondary-color);
 }
 
 /* index */
+s
 
 /* button */
 .button .title-button {
+  color: var(--white-color);
   border-color: transparent;
   border-radius: 4px;
   background-color: var(--accent-color);
 }
 
 .button .title-button:active {
-  color: var(--white-color);
+  color: var(--primary-text-color);
 }
