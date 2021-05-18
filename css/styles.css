@@ -97,7 +97,6 @@ a {
 }
 
 /* Портфоліо */
-
 .filter-option .filter-button {
   cursor: pointer;
 }
@@ -109,7 +108,7 @@ a {
   background-color: var(--accent-color);
 }
 
-.filter-option .filter-button {
+.filter-options .filter-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -121,7 +120,7 @@ a {
 }
 
 /* PROJECTS */
-.projects-list .projects-title {
+.projects-list .project-title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
