@@ -55,8 +55,7 @@ ul {
 a {
   text-decoration: none;
 }
-/* Навігація */
-
+/* ---------НАВІГАЦІЯ------------ */
 .nav-list .nav-adress:hover,
 .nav-list .nav-adress:focus {
   color: var(--accent-color);
@@ -86,58 +85,104 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .nav-list .nav-adress {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.2px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-/* Портфоліо */
-.filter-option .filter-button {
-  cursor: pointer;
+/*------------INDEX----------------*/
+
+/* button */
+.button-bgc {
+  background-color: var(--gray-background);
 }
 
-.filter-item .filter-button:focus,
-.filter-item .filter-button:hover {
-  color: #ffffff;
-  border-color: transparent;
+.title-main {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.button-bgc .title-button {
+  color: var(--white-color);
   background-color: var(--accent-color);
-}
-
-.filter-options .filter-button {
+  border-color: transparent;
+  border-radius: 4px;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-}
-
-.filter-item .filter-button:active {
-  color: var(--accent-color);
-}
-
-/* PROJECTS */
-.projects-list .project-title {
-  color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
-
-.title-card .project-description {
-  color: var(--secondary-color);
-  font-family: inherit;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.button-bgc .title-button:active {
+  color: var(--primary-text-color);
+}
+
+/* Features */
+.features-list .heading {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.features-list .content {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.work {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.title-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-description .user {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.about .position {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 /* Подвал */
 .logo-white {
   color: var(--white-color);
+  letter-spacing: 0.03em;
 }
 
 .footer-bg {
@@ -157,85 +202,53 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .mail-link,
 .tel-link {
   color: #ffffff99;
+  letter-spacing: 0.03em;
 }
 
-/* index */
-
-/* button */
-.button-bgc {
-  background-color: var(--gray-background);
+/*-------PORTFOLIO----------*/
+.filter-option .filter-button {
+  cursor: pointer;
 }
 
-.title-main {
-  color: var(--white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.button-bgc .title-button {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+.filter-item .filter-button:focus,
+.filter-item .filter-button:hover {
+  color: #ffffff;
   border-color: transparent;
-  border-radius: 4px;
+  background-color: var(--accent-color);
+}
+
+.filter-options .filter-button {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.6px;
-}
-
-.button-bgc .title-button:active {
-  color: var(--primary-text-color);
-}
-
-/* Features */
-.features-list .heading {
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  text-transform: uppercase;
-}
-
-.features-list .content {
-  color: var(--secondary-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.work {
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-.title-team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-.team-description .user {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.17;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
-.about .position {
+.filter-item .filter-button:active {
+  color: var(--accent-color);
+}
+
+/* PROJECTS */
+.projects-list .project-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.title-card .project-description {
   color: var(--secondary-color);
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.17;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
