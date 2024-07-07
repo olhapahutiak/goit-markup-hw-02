@@ -118,7 +118,6 @@ body {
     line-height: 1.50;
     letter-spacing: 0.04em;
     color: var(--white);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--iris);
  }
    
