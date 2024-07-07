@@ -232,4 +232,6 @@ body {
     line-height: 1.50;
     letter-spacing: 0.02em;
     color: var(--cloud);
+    line-height: 1.5;
+    color:#F4F4FD;
 }
