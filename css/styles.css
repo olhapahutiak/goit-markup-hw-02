@@ -29,7 +29,23 @@ body {
     text-decoration: none;
  }
 
- /* LOGO */
+ button {
+    cursor: pointer;
+ }
+
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+   
+ 
+/* --------------------HEADER----------------------- */
  .header-logo {
     font-weight: 700;
     font-size: 18px;
@@ -59,6 +75,43 @@ body {
     color: var(--slate);
  }
 
+ .hero {
+    background-color: gray;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #d9d9d9;
+}
  
- 
-    
+ .hero-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--iris);
+ }
+   
+ /*------------- FEATURES--------- */
+ .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+ }
+
+ .features-item-text {
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+ }
